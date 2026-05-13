@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Restaurant.API1/Restaurant.API1.csproj" Id="75678c02-99df-4bcd-b7b6-dc0fe70fc6b0" />
+  <Project Path="Restaurants.Application/Restaurants.Application.csproj" Id="f25bfb32-ca91-4ebf-8f66-c11d723bb817" />
+  <Project Path="Restaurants.Domain/Restaurants.Domain.csproj" Id="ef807b7f-a9c9-4761-a13e-9fb273fe00ea" />
+  <Project Path="Restaurants.Infrastructure/Restaurants.Infrastructure.csproj" Id="fd3e475e-306e-4f77-a3c3-c143ceacd691" />
+</Solution>
