@@ -13,6 +13,14 @@ public class RestaurantAuthorizationService(ILogger<RestaurantAuthorizationServi
     {
         var user = userContext.GetCurrentUser();
 
+        if (user == null)
+        {
+            logger.LogWarning("No authenticated user found - authorization denied for operation {Operation} on restaurant {RestaurantName}",
+                resourceOperation,
+                restaurant?.Name);
+            return false;
+        }
+
         logger.LogInformation("Authorizing user {UserEmail}, to {Operation} for restaurant {RestaurantName}",
             user.Email,
             resourceOperation,
